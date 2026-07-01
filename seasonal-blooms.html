@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seasonal Blooms</title>
+  <meta name="description"
+    content="Explore Bloomora's seasonal flower collections - spring tulips, summer sunflowers, monsoon hydrangeas, and winter arrangements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css?v=4.1" />
+  <link rel="stylesheet" href="assets/css/pages.css?v=4.1" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div>
+        <div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower
+            Delivery</span></div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home 1</a></li>
+        <li><a href="home2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown"><a href="occasions.html" class="nav-link nav-dropdown-toggle">Occasions <i
+              class="bi bi-chevron-down" style="font-size:0.7rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="occasions.html#birthday" class="dropdown-item"><i
+                  class="bi bi-balloon-heart"></i><span><strong>Birthday</strong><span>Bright celebration
+                    bouquets</span></span></a></li>
+            <li><a href="occasions.html#anniversary" class="dropdown-item"><i
+                  class="bi bi-heart-fill"></i><span><strong>Anniversary</strong><span>Romantic premium
+                    roses</span></span></a></li>
+            <li><a href="occasions.html#wedding" class="dropdown-item"><i
+                  class="bi bi-stars"></i><span><strong>Wedding</strong><span>Bridal and venue flowers</span></span></a>
+            </li>
+            <li><a href="occasions.html#funeral" class="dropdown-item"><i
+                  class="bi bi-flower2"></i><span><strong>Sympathy</strong><span>Calm respectful
+                    tributes</span></span></a></li>
+            <li><a href="occasions.html#congrats" class="dropdown-item"><i
+                  class="bi bi-trophy-fill"></i><span><strong>Congratulations</strong><span>For wins and
+                    milestones</span></span></a></li>
+            <li><a href="occasions.html#getwell" class="dropdown-item"><i
+                  class="bi bi-heart-pulse-fill"></i><span><strong>Get Well</strong><span>Warm recovery
+                    wishes</span></span></a></li>
+          </ul>
+        </li>
+        <li><a href="seasonal-blooms.html" class="nav-link active">Seasonal Blooms</a></li>
+        <li><a href="delivery-areas.html" class="nav-link">Delivery Areas</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-controls"><button class="nav-icon-btn toggle-theme-btn"><i
+            class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun"
+            style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label"
+            style="font-size:0.7rem;font-weight:700;">RTL</span></button><a href="login.html"
+          class="btn-login-nav nav-link"><i class="bi bi-person-fill"></i> Login</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home 1</a></li>
+      <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="occasions.html" class="mobile-nav-link">Occasions</a></li>
+      <li><a href="seasonal-blooms.html" class="mobile-nav-link active">Seasonal Blooms</a></li>
+      <li><a href="delivery-areas.html" class="mobile-nav-link">Delivery Areas</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-controls"><button class="nav-icon-btn toggle-theme-btn"><i
+          class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun"
+          style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label"
+          style="font-size:0.7rem;font-weight:700;">RTL</span></button></div>
+    <div class="mobile-login-btn"><a href="login.html" class="btn-login-nav"
+        style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i
+          class="bi bi-person-fill"></i> Login to Your Account</a></div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner bg-banner-seasonal" aria-label="Seasonal blooms banner">
+    <div class="container">
+      <div class="banner-content" data-animate="fade-up">
+        <span class="banner-eyebrow"><i class="bi bi-sun"></i> Nature's Finest</span>
+        <h1 class="banner-title">Celebrate Every<br><span>Season With Blooms</span></h1>
+        <p class="banner-desc">Fresh flowers curated for every season. From delicate spring blossoms to bold summer
+          statement blooms.</p>
+        <div class="banner-breadcrumb"><a href="index.html">Home</a><span class="sep"><i
+              class="bi bi-chevron-right"></i></span><span>Seasonal Blooms</span></div>
+      </div>
+    </div>
+    <div class="banner-deco"></div>
+  </section>
+
+  <!-- === SPRING COLLECTION === -->
+  <section id="spring" class="section" aria-label="Spring flowers">
+    <div class="container">
+      <div class="split-section">
+        <div data-animate="fade-right">
+          <span class="section-eyebrow"><i class="bi bi-flower2"></i> Spring Collection</span>
+          <h2 class="section-title">Spring Blooms<br><em>In Full Glory</em></h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+            Usher in the warmth of spring with our seasonal selection of tulips, daffodils, cherry blossoms, and fresh
+            meadow flowers. Light, airy, and full of life.
+          </p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <span class="tag tag-green">Tulips</span><span class="tag tag-green">Daffodils</span><span
+              class="tag tag-green">Cherry Blossoms</span><span class="tag tag-green">Hyacinths</span><span
+              class="tag tag-green">Pansies</span>
+          </div>
+          <p
+            style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="bi bi-calendar3" style="color:var(--primary);"></i>
+            Available: <strong style="color:var(--text);">March - May</strong>
+          </p>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Spring Blooms</a>
+        </div>
+        <div class="img-reveal" data-animate="fade-left">
+          <img src="assets/images/flowers/flower_spring.png" alt="Spring flower collection"
+            style="width:100%;height:420px;object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SUMMER BLOOMS === -->
+  <section id="summer" class="section section-alt" aria-label="Summer flowers">
+    <div class="container">
+      <div class="split-section reverse">
+        <div class="img-reveal" data-animate="fade-right">
+          <img src="assets/images/flowers/flower_summer.png" alt="Summer flower collection"
+            style="width:100%;height:420px;object-fit:cover;" />
+        </div>
+        <div data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-sun-fill"></i> Summer Collection</span>
+          <h2 class="section-title">Summer Blooms<br><em>Bold &amp; Bright</em></h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+            Celebrate the long summer days with our vibrant collection of sunflowers, dahlias, gerberas, and tropical
+            blooms. Every arrangement radiates warmth and energy.
+          </p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <span class="tag">Sunflowers</span><span class="tag">Dahlias</span><span class="tag">Zinnias</span><span
+              class="tag">Marigolds</span><span class="tag">Gladioli</span>
+          </div>
+          <p
+            style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="bi bi-calendar3" style="color:var(--primary);"></i>
+            Available: <strong style="color:var(--text);">June - August</strong>
+          </p>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Summer Blooms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MONSOON FRESH PICKS === -->
+  <section id="monsoon" class="section" aria-label="Monsoon flowers">
+    <div class="container">
+      <div class="split-section">
+        <div data-animate="fade-right">
+          <span class="section-eyebrow"><i class="bi bi-cloud-rain"></i> Monsoon Collection</span>
+          <h2 class="section-title">Monsoon Fresh Picks<br><em>Cool &amp; Serene</em></h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+            Embrace the refreshing rain season with hydrangeas, gardenias, and tropical foliage glistening with morning
+            dew. Cool blue and purple tones for a serene atmosphere.
+          </p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <span class="tag tag-lavender">Hydrangeas</span><span class="tag tag-lavender">Gardenias</span><span
+              class="tag tag-lavender">Orchids</span><span class="tag tag-lavender">Tropical Leaves</span>
+          </div>
+          <p
+            style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="bi bi-calendar3" style="color:var(--primary);"></i>
+            Available: <strong style="color:var(--text);">July - September</strong>
+          </p>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Monsoon Blooms</a>
+        </div>
+        <div class="img-reveal" data-animate="fade-left">
+          <img src="assets/images/flowers/flower_monsoon.png" alt="Monsoon flower collection"
+            style="width:100%;height:420px;object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === WINTER FLOWERS === -->
+  <section id="winter" class="section section-alt" aria-label="Winter flowers">
+    <div class="container">
+      <div class="split-section reverse">
+        <div class="img-reveal" data-animate="fade-right">
+          <img src="assets/images/flowers/flower_funeral.png" alt="Winter white flower arrangement"
+            style="width:100%;height:420px;object-fit:cover;" />
+        </div>
+        <div data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-snow"></i> Winter Collection</span>
+          <h2 class="section-title">Winter Flowers<br><em>Elegant &amp; Timeless</em></h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+            Embrace winter with poinsettias, hellebores, frosted eucalyptus, and classic white roses. Perfect for
+            Christmas, New Year, and seasonal celebrations.
+          </p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <span class="tag">Poinsettias</span><span class="tag">Hellebores</span><span class="tag">White
+              Roses</span><span class="tag">Eucalyptus</span><span class="tag">Pine Cones</span>
+          </div>
+          <p
+            style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="bi bi-calendar3" style="color:var(--primary);"></i>
+            Available: <strong style="color:var(--text);">November - February</strong>
+          </p>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Winter Blooms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === LIMITED TIME ARRANGEMENTS === -->
+  <section id="limited" class="section" aria-label="Limited time arrangements">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow" style="color:var(--primary);"><i class="bi bi-alarm"></i> Limited Time Only</span>
+        <h2 class="section-title">Limited Edition Arrangements</h2>
+        <p class="section-subtitle">Exclusive seasonal collections available for a short time. Order before they're
+          gone!</p>
+      </div>
+      <div class="section-divider">
+        <div class="line"></div><i class="bi bi-flower1 flower-icon"></i>
+        <div class="line"></div>
+      </div>
+
+      <div class="card-grid card-grid-3 limited-time-grid">
+        <article class="card" data-animate="fade-up" data-delay="100">
+          <div class="card-img-wrap">
+            <img src="assets/images/flowers/limited_spring.png" alt="Spring edition" class="card-img" loading="lazy" />
+            <span class="card-badge">Limited</span>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Spring Edition</span>
+            <h3 class="card-title">English Meadow Collection</h3>
+            <p class="card-desc">A hand-tied wildflower meadow bouquet featuring seasonal English blooms - available
+              this season only.</p>
+            <div class="card-footer-row"><span class="card-price">GBP 55</span><a href="contact.html"
+                class="btn btn-primary btn-sm">Order Now</a></div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="200">
+          <div class="card-img-wrap">
+            <img src="assets/images/flowers/limited_summer.png" alt="Summer exclusive" class="card-img"
+              loading="lazy" />
+            <span class="card-badge">Exclusive</span>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Summer Exclusive</span>
+            <h3 class="card-title">Golden Hour Bouquet</h3>
+            <p class="card-desc">Our signature summer arrangement combining the warmth of golden dahlias and vintage
+              peachy roses.</p>
+            <div class="card-footer-row"><span class="card-price">GBP 68</span><a href="contact.html"
+                class="btn btn-primary btn-sm">Order Now</a></div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="300">
+          <div class="card-img-wrap">
+            <img src="assets/images/flowers/limited_monsoon.png" alt="Monsoon exclusive" class="card-img"
+              loading="lazy" />
+            <span class="card-badge">Seasonal</span>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Seasonal Pick</span>
+            <h3 class="card-title">Tropical Rain Forest Bundle</h3>
+            <p class="card-desc">Blue hydrangeas, tropical leaves, and white gardenias - a unique monsoon collection not
+              to be missed.</p>
+            <div class="card-footer-row"><span class="card-price">GBP 72</span><a href="contact.html"
+                class="btn btn-primary btn-sm">Order Now</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FLOWER CARE TIPS === -->
+  <section id="care-tips" class="section section-alt" aria-label="Flower care tips">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-heart-fill"></i> Care Guide</span>
+        <h2 class="section-title">Flower Care Tips</h2>
+        <p class="section-subtitle">Help your blooms stay fresh longer with these expert tips from our florists.</p>
+      </div>
+      <div class="section-divider">
+        <div class="line"></div><i class="bi bi-flower1 flower-icon"></i>
+        <div class="line"></div>
+      </div>
+
+      <div class="card-grid card-grid-3">
+        <div class="tip-card" data-animate="fade-up" data-delay="100">
+          <div class="tip-icon"><i class="bi bi-scissors"></i></div>
+          <div class="tip-content">
+            <h4>Trim Stems Daily</h4>
+            <p>Cut stems at a 45-degree angle<br class="desktop-care-break"> every 1-2 days to help flowers<br class="desktop-care-break"> drink water more effectively and<br class="desktop-care-break"> stay fresh longer.</p>
+          </div>
+        </div>
+        <div class="tip-card" data-animate="fade-up" data-delay="200">
+          <div class="tip-icon"><i class="bi bi-droplet-fill"></i></div>
+          <div class="tip-content">
+            <h4>Change Water Regularly</h4>
+            <p>Replace vase water every 2 days with fresh, lukewarm water to prevent bacterial build-up that shortens
+              flower life.</p>
+          </div>
+        </div>
+        <div class="tip-card" data-animate="fade-up" data-delay="300">
+          <div class="tip-icon"><i class="bi bi-thermometer-sun"></i></div>
+          <div class="tip-content">
+            <h4>Avoid Direct Heat</h4>
+            <p>Keep your flowers away from direct sunlight, radiators, and draughts. Flowers thrive in cool,
+              well-ventilated spaces.</p>
+          </div>
+        </div>
+        <div class="tip-card" data-animate="fade-up" data-delay="400">
+          <div class="tip-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.1em" height="1.1em" fill="currentColor" viewBox="0 0 16 16"
+              style="display:inline-block;vertical-align:middle;">
+              <path
+                d="M8.835 14H1.5A1.5 1.5 0 0 1 0 12.5C0 9.286 5.5 5 8 2.5a.75.75 0 0 1 1.22.583c-.021.758-.153 1.942-.48 3.236.037.007.075.015.111.026.046.012.091.026.136.043C10.51 6.543 12.5 8.5 13.5 11.5c.263.79-.068 1.492-.662 1.954C11.896 14.209 10.395 14 8.835 14zM1.5 13h7.172c1.378 0 2.68.188 3.513-.462a.611.611 0 0 0 .166-.231c-.812-2.518-2.477-4.148-3.793-4.63-.092-.034-.188-.061-.284-.08a.75.75 0 0 1-.58-.707c.01-.482.048-1.077.117-1.782C6.726 6.507 2.19 10.142 1.5 13z" />
+            </svg>
+          </div>
+          <div class="tip-content">
+            <h4>Remove Lower Leaves</h4>
+            <p>Strip any leaves that would be<br class="desktop-care-break"> submerged in water, as they<br class="desktop-care-break"> rot quickly and contaminate<br class="desktop-care-break"> the water.</p>
+          </div>
+        </div>
+        <div class="tip-card" data-animate="fade-up" data-delay="500">
+          <div class="tip-icon"><i class="bi bi-cup-hot-fill"></i></div>
+          <div class="tip-content">
+            <h4>Use Flower Food</h4>
+            <p>Always use the flower food sachet provided with your bouquet - it contains nutrients and antibacterial
+              agents.</p>
+          </div>
+        </div>
+        <div class="tip-card" data-animate="fade-up" data-delay="600">
+          <div class="tip-icon"><i class="bi bi-eye-fill"></i></div>
+          <div class="tip-content">
+            <h4>Inspect Regularly</h4>
+            <p>Remove any wilted petals or blooms promptly to prevent them from releasing ethylene gas that speeds up ageing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CTA === -->
+  <section class="cta-section bg-cta-2" aria-label="Seasonal order CTA">
+    <div class="container">
+      <div class="cta-content" data-animate="zoom-in">
+        <span class="section-eyebrow" style="color:var(--secondary);"><i class="bi bi-calendar3"></i> Season's Best</span>
+        <h2 class="section-title">Order This Season's<br><em>Freshest Blooms</em></h2>
+        <p class="section-subtitle">Our seasonal collections change throughout the year. Contact us today to discover what's in bloom right now.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-white btn-lg"><i class="bi bi-envelope-heart"></i> Enquire About Season</a>
+          <a href="gallery.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:white;"><i class="bi bi-images"></i> View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" style="margin-bottom:1rem; display:flex;">
+            <div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div>
+            <div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div>
+          </a>
+          <p class="footer-desc">Fresh handcrafted flower arrangements delivered to your door. Same-day delivery available across the city.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-link-45deg"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-link-45deg"></i>About Us</a></li>
+            <li><a href="occasions.html"><i class="bi bi-link-45deg"></i>Occasions</a></li>
+            <li><a href="seasonal-blooms.html"><i class="bi bi-link-45deg"></i>Seasonal Blooms</a></li>
+            <li><a href="delivery-areas.html"><i class="bi bi-link-45deg"></i>Delivery Areas</a></li>
+            <li><a href="gallery.html"><i class="bi bi-link-45deg"></i>Gallery</a></li>
+            <li><a href="contact.html"><i class="bi bi-link-45deg"></i>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Contact Info</h3>
+          <div class="footer-contact">
+            <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>42 Blossom Lane, London EC1A 1BB</span></div>
+            <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+44 (0) 123 456 7890</span></div>
+            <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@bloomora.co.uk</span></div>
+            <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon-Sat: 7AM-8PM, Sun: 9AM-5PM</span></div>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3 class="footer-col-title">Newsletter</h3>
+          <p class="footer-newsletter-text">Get seasonal inspiration and exclusive offers.</p>
+          <form data-form="newsletter" style="margin-bottom:1rem;">
+            <div class="input-group"><input type="email" placeholder="Your email address" required /><button type="submit" class="btn btn-primary" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;">Subscribe</button></div>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);"><i class="bi bi-lock-fill"></i> Unsubscribe anytime.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">&copy; 2026 Bloomora Fresh Flower Delivery. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

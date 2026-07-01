@@ -1,0 +1,43 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Bloomora logo</title>
+  <desc id="desc">Modern pink Bloomora flower logo.</desc>
+  <rect width="160" height="160" rx="42" fill="url(#card)"/>
+  <circle cx="80" cy="80" r="58" fill="url(#halo)" opacity="0.42"/>
+
+  <path d="M79.7 27C89.5 41.6 92 56.9 87.1 72.9C102.4 66.5 118 66.6 134 73.2C123.1 86.8 109.8 94.1 94 95.3C103.4 108.8 106.7 124 103.8 141C88.9 133.7 78.9 122.3 73.8 106.8C63.5 118.6 49.4 125.4 31.5 127.3C34.2 110.8 42.2 98 55.5 88.9C40.7 84.3 29.4 73.9 21.6 57.6C38.9 54.7 54.1 58.1 67.2 67.9C65.4 52.5 69.6 38.9 79.7 27Z" fill="url(#petals)"/>
+
+  <path d="M80 37.5C86.3 50.8 87.2 64 82.7 77.1C95.2 70.9 108.3 69.9 122.1 74.1C112.1 84.4 100.2 89.3 86.6 88.8C95.1 99.2 98.2 111.5 95.9 125.8C83.1 119.2 75.1 109.1 71.9 95.5C62.5 105.5 50.1 110.7 34.9 111.1C40.9 98.1 50.4 89.8 63.3 86.2C50.3 80.8 41.7 71.2 37.4 57.5C51.5 57 63.6 61.4 73.6 70.6C71.4 57.2 73.5 46.2 80 37.5Z" fill="#FFF7FA" opacity="0.24"/>
+
+  <path d="M72 92C61.7 90.3 53.5 84.6 47.5 75" stroke="#FCE8EE" stroke-width="7" stroke-linecap="round" opacity="0.72"/>
+  <path d="M88 82C97.5 76.9 107.3 75.8 117.5 78.6" stroke="#FCE8EE" stroke-width="7" stroke-linecap="round" opacity="0.72"/>
+  <path d="M78.7 72.8C78 62.8 80.8 53.9 87 46.2" stroke="#FCE8EE" stroke-width="7" stroke-linecap="round" opacity="0.72"/>
+
+  <circle cx="80" cy="83" r="21" fill="#FFFFFF"/>
+  <circle cx="80" cy="83" r="13" fill="url(#core)"/>
+  <path d="M72.7 84.5C75 88.7 79.2 90.9 84.9 90.2" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+
+  <path d="M103 42C112.2 39.8 120.3 42.8 127.3 51" stroke="#FFBCD2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M111 38L126.8 50.8L108 54.4" stroke="#FFBCD2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <defs>
+    <linearGradient id="card" x1="18" y1="12" x2="147" y2="154" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5F8"/>
+      <stop offset="0.48" stop-color="#FFE4EE"/>
+      <stop offset="1" stop-color="#FFD3E2"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 80) rotate(90) scale(58)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F85D8E"/>
+    </radialGradient>
+    <linearGradient id="petals" x1="34" y1="34" x2="121" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8CB3"/>
+      <stop offset="0.38" stop-color="#F85D8E"/>
+      <stop offset="0.72" stop-color="#E63973"/>
+      <stop offset="1" stop-color="#C91F5A"/>
+    </linearGradient>
+    <linearGradient id="core" x1="69" y1="69" x2="91" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB2CC"/>
+      <stop offset="1" stop-color="#F85D8E"/>
+    </linearGradient>
+  </defs>
+</svg>

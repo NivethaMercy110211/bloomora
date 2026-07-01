@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home 2</title>
+  <meta name="description" content="Discover Bloomora's fresh arrivals, best-selling bouquets, and our delivery promise. Same-day flower delivery across the city." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.7" />
+  <link rel="stylesheet" href="assets/css/pages.css?v=2.7" />
+</head>
+<body>
+
+  <!-- =============== NAVBAR =============== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="navbar-brand" aria-label="Bloomora Home">
+        <div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div>
+        <div class="brand-text">
+          <span class="brand-name">Bloomora</span>
+          <span class="brand-tagline">Fresh Flower Delivery</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home 1</a></li>
+        <li><a href="home2.html" class="nav-link active">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown">
+          <a href="occasions.html" class="nav-link nav-dropdown-toggle">Occasions <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="occasions.html#birthday" class="dropdown-item"><i class="bi bi-balloon-heart"></i><span><strong>Birthday</strong><span>Bright celebration bouquets</span></span></a></li>
+            <li><a href="occasions.html#anniversary" class="dropdown-item"><i class="bi bi-heart-fill"></i><span><strong>Anniversary</strong><span>Romantic premium roses</span></span></a></li>
+            <li><a href="occasions.html#wedding" class="dropdown-item"><i class="bi bi-stars"></i><span><strong>Wedding</strong><span>Bridal and venue flowers</span></span></a></li>
+            <li><a href="occasions.html#funeral" class="dropdown-item"><i class="bi bi-flower2"></i><span><strong>Sympathy</strong><span>Calm respectful tributes</span></span></a></li>
+            <li><a href="occasions.html#congrats" class="dropdown-item"><i class="bi bi-trophy-fill"></i><span><strong>Congratulations</strong><span>For wins and milestones</span></span></a></li>
+            <li><a href="occasions.html#getwell" class="dropdown-item"><i class="bi bi-heart-pulse-fill"></i><span><strong>Get Well</strong><span>Warm recovery wishes</span></span></a></li>
+          </ul>
+        </li>
+        <li><a href="seasonal-blooms.html" class="nav-link">Seasonal Blooms</a></li>
+        <li><a href="delivery-areas.html" class="nav-link">Delivery Areas</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-icon-btn toggle-theme-btn" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill theme-icon-moon"></i>
+          <i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i>
+        </button>
+        <button class="nav-icon-btn toggle-dir-btn" aria-label="Toggle direction">
+          <span class="dir-label" style="font-size:0.7rem;font-weight:700;letter-spacing:0.04em;">RTL</span>
+        </button>
+        <a href="login.html" class="btn-login-nav nav-link"><i class="bi bi-person-fill"></i> Login</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home 1</a></li>
+      <li><a href="home2.html" class="mobile-nav-link active">Home 2</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="occasions.html" class="mobile-nav-link">Occasions</a></li>
+      <li><a href="seasonal-blooms.html" class="mobile-nav-link">Seasonal Blooms</a></li>
+      <li><a href="delivery-areas.html" class="mobile-nav-link">Delivery Areas</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-controls">
+      <button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button>
+      <button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button>
+    </div>
+    <div class="mobile-login-btn">
+      <a href="login.html" class="btn-login-nav" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i class="bi bi-person-fill"></i> Login to Your Account</a>
+    </div>
+  </div>
+
+  <!-- =============== HERO 2 - SPLIT LAYOUT =============== -->
+  <section class="hero-split-section" aria-label="Hero section">
+    <!-- Left Content -->
+    <div class="hero-split-left">
+      <div class="hero-split-content">
+        <div class="hero-eyebrow" style="background:rgba(248,93,142,0.08);border:1px solid rgba(248,93,142,0.15);color:var(--primary);display:inline-flex;align-items:center;gap:0.6rem;padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.2rem;" data-animate="fade-right">
+          <i class="bi bi-flower2"></i> New Arrivals 2024
+        </div>
+        <h1 style="font-family:var(--font-heading);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;line-height:1.1;color:var(--text);margin-bottom:1.2rem;" data-animate="fade-right" data-delay="100">
+          Fresh Flowers<br>For Every <span style="color:var(--primary);font-style:italic;">Moment</span>
+        </h1>
+        <p style="font-size:1.05rem;color:var(--text-muted);line-height:1.75;margin-bottom:2rem;max-width:460px;" data-animate="fade-right" data-delay="200">
+          Discover our new season collection. Each arrangement crafted by expert florists using the freshest blooms direct from the farm.
+        </p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;" data-animate="fade-right" data-delay="300">
+          <a href="seasonal-blooms.html" class="btn btn-primary btn-lg"><i class="bi bi-flower3"></i> Explore Collection</a>
+          <a href="contact.html" class="btn btn-outline btn-lg"><i class="bi bi-envelope-heart"></i> Order Custom</a>
+        </div>
+        <div class="hero2-stats" style="display:flex;gap:2.5rem;margin-top:2.5rem;flex-wrap:wrap;" data-animate="fade-up" data-delay="400">
+          <div>
+            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:var(--primary);">4.9<i class="bi bi-star-fill" style="font-size:1rem;"></i></div>
+            <div style="font-size:0.78rem;color:var(--text-muted);">Average Rating</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:var(--primary);">15K+</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);">Orders Delivered</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:var(--primary);">2hr</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);">Express Delivery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right Image -->
+    <div class="hero-split-right">
+      <img src="assets/images/banners/banner_home2.png" alt="Fresh flower arrangements" style="width:100%;height:100%;object-fit:cover;" />
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(255,255,255,0.05) 0%,transparent 100%)"></div>
+      <!-- Floating Badge -->
+      <div style="position:absolute;bottom:2.5rem;left:2rem;background:white;border-radius:14px;padding:1rem 1.25rem;box-shadow:0 8px 30px rgba(0,0,0,0.15);max-width:200px;" data-animate="zoom-in" data-delay="500">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem;">
+          <div style="width:32px;height:32px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.9rem;"><i class="bi bi-truck"></i></div>
+          <strong style="font-size:0.82rem;color:#1a1a1a;">Same Day Delivery</strong>
+        </div>
+        <p style="font-size:0.72rem;color:#7a7a7a;margin:0;">Order before 2 PM for delivery today</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FRESH ARRIVALS =============== -->
+  <section class="section" aria-label="Fresh arrivals">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-stars"></i> Just Arrived</span>
+        <h2 class="section-title">Fresh Arrivals This Week</h2>
+        <p class="section-subtitle">Our florists receive fresh blooms daily. Here are the newest additions to our collection.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3">
+        <article class="card" data-animate="fade-up" data-delay="100">
+          <div class="card-img-wrap" style="position:relative;">
+            <img src="assets/images/flowers/flower_spring.png" alt="Spring tulips" class="card-img" loading="lazy" />
+            <span class="arrivals-badge">New</span>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Spring Collection</span>
+            <h3 class="card-title">Dutch Tulip Bundle</h3>
+            <p class="card-desc">Premium mixed colour tulips from Dutch growers, arranged fresh for bright gifting and everyday celebrations.</p>
+            <div class="card-footer-row">
+              <span class="card-price">GBP 28</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="200">
+          <div class="card-img-wrap" style="position:relative;">
+            <img src="assets/images/flowers/flower_summer.png" alt="Summer sunflowers" class="card-img" loading="lazy" />
+            <span class="arrivals-badge">Hot</span>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Summer Blooms</span>
+            <h3 class="card-title">Sunflower Radiance</h3>
+            <p class="card-desc">Bright golden sunflowers that bring warmth, joy, and cheerful summer energy to every thoughtful flower gift.</p>
+            <div class="card-footer-row">
+              <span class="card-price">GBP 35</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="300">
+          <div class="card-img-wrap" style="position:relative;">
+            <img src="assets/images/flowers/flower_monsoon.png" alt="Monsoon hydrangeas" class="card-img" loading="lazy" />
+            <span class="arrivals-badge">Fresh</span>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Monsoon Fresh</span>
+            <h3 class="card-title">Blue Hydrangea Bliss</h3>
+            <p class="card-desc">Cool blue hydrangeas with tropical greenery, designed as a serene and refreshing choice for summer moments.</p>
+            <div class="card-footer-row">
+              <span class="card-price">GBP 42</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-label="Why choose Bloomora">
+    <div class="container">
+      <div class="split-section">
+        <div class="img-reveal" data-animate="fade-right">
+          <img src="assets/images/banners/banner_about.png" alt="Our florist at work" style="width:100%;height:500px;object-fit:cover;" />
+        </div>
+        <div data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-award"></i> Our Difference</span>
+          <h2 class="section-title">Why Choose Our Florist?</h2>
+          <p class="section-subtitle">We combine passion, expertise, and the freshest flowers to create unforgettable moments.</p>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-flower3"></i></div>
+              <div class="why-text">
+                <h3>Farm-Fresh Quality</h3>
+                <p>We source our flowers directly from trusted UK and European farms, ensuring every bloom is at peak freshness.</p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-truck"></i></div>
+              <div class="why-text">
+                <h3>Reliable Same-Day Delivery</h3>
+                <p>Order by 2 PM and receive your flowers the same day. Our dedicated drivers handle every delivery with care.</p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="bi bi-people-fill"></i></div>
+              <div class="why-text">
+                <h3>Expert Florists</h3>
+                <p>Our team of certified florists has over 10 years of combined experience creating stunning arrangements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== BEST SELLING BOUQUETS =============== -->
+  <section class="section" aria-label="Best selling bouquets">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-trophy"></i> Top Picks</span>
+        <h2 class="section-title">Best-Selling Bouquets</h2>
+        <p class="section-subtitle">Our most loved arrangements, chosen again and again by our valued customers.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3 bestseller-grid">
+        <article class="card" data-animate="fade-up" data-delay="100">
+          <div class="card-img-wrap" style="position:relative;">
+            <span class="best-seller-tag">#1 Bestseller</span>
+            <img src="assets/images/flowers/flower_anniversary.png" alt="Red rose bouquet" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-label">Anniversary</span>
+            <h3 class="card-title">Classic Red Rose Dozen</h3>
+            <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem;">
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <span class="rating-count">(428 reviews)</span>
+            </div>
+            <p class="card-desc">Twelve hand-selected premium red roses with soft baby's breath, tied with an elegant satin ribbon.</p>
+            <div class="card-footer-row">
+              <span class="card-price">GBP 45</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="200">
+          <div class="card-img-wrap" style="position:relative;">
+            <span class="best-seller-tag">#2 Bestseller</span>
+            <img src="assets/images/flowers/flower_birthday.png" alt="Birthday bouquet" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-label">Birthday</span>
+            <h3 class="card-title">Birthday Bloom Burst</h3>
+            <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem;">
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+              <span class="rating-count">(312 reviews)</span>
+            </div>
+            <p class="card-desc">A cheerful burst of seasonal blooms in the brightest colours - guaranteed to bring a smile.</p>
+            <div class="card-footer-row">
+              <span class="card-price">GBP 38</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="300">
+          <div class="card-img-wrap" style="position:relative;">
+            <span class="best-seller-tag">#3 Bestseller</span>
+            <img src="assets/images/flowers/flower_wedding.png" alt="Wedding bouquet" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-label">Wedding</span>
+            <h3 class="card-title">Ivory Peony Cascade</h3>
+            <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem;">
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <span class="rating-count">(198 reviews)</span>
+            </div>
+            <p class="card-desc">Cascading ivory peonies, white roses, and eucalyptus styled for an unforgettable bridal look.</p>
+            <div class="card-footer-row">
+              <span class="card-price">GBP 95</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== DELIVERY PROMISE =============== -->
+  <section class="section section-alt" aria-label="Delivery promise">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-truck"></i> Our Delivery Promise</span>
+        <h2 class="section-title">Delivered Fresh, Every Time</h2>
+        <p class="section-subtitle">Our four-step process ensures your flowers arrive in perfect condition, on time.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-4">
+        <div class="promise-card" data-animate="fade-up" data-delay="100">
+          <div class="promise-icon"><i class="bi bi-flower3"></i></div>
+          <h3>Fresh Sourcing</h3>
+          <p>Flowers are hand-selected from trusted partner farms every morning for lasting freshness.</p>
+        </div>
+        <div class="promise-card" data-animate="fade-up" data-delay="200">
+          <div class="promise-icon"><i class="bi bi-scissors"></i></div>
+          <h3>Expert Crafting</h3>
+          <p>Skilled florists arrange every bouquet with balanced colour, texture, and careful detail.</p>
+        </div>
+        <div class="promise-card" data-animate="fade-up" data-delay="300">
+          <div class="promise-icon"><i class="bi bi-box-seam"></i></div>
+          <h3>Careful Packaging</h3>
+          <p>Eco-friendly packaging protects each stem and keeps blooms fresh during every journey.</p>
+        </div>
+        <div class="promise-card" data-animate="fade-up" data-delay="400">
+          <div class="promise-icon"><i class="bi bi-house-heart-fill"></i></div>
+          <h3>Door Delivery</h3>
+          <p>Your flowers are delivered safely to your door, ready to be enjoyed with a beautiful smile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== OCCASION FLOWER CARDS =============== -->
+  <section class="section" aria-label="Flowers by occasion">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-gift"></i> By Occasion</span>
+        <h2 class="section-title">Flowers For Every Occasion</h2>
+        <p class="section-subtitle">Whether it is a joyful celebration or a tender farewell, we have the perfect arrangement.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3">
+        <article class="card" data-animate="fade-up" data-delay="100">
+          <div class="card-img-wrap">
+            <img src="assets/images/flowers/flower_getwell.png" alt="Get well flowers" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-label">Get Well Soon</span>
+            <h3 class="card-title">Healing Garden Basket</h3>
+            <p class="card-desc">Bright and cheerful blooms arranged in a decorative basket to lift spirits and send warm wishes.</p>
+            <div class="card-footer-row">
+              <span class="card-price">from GBP 35</span>
+              <a href="occasions.html#getwell" class="btn btn-outline btn-sm">View Details</a>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="200">
+          <div class="card-img-wrap">
+            <img src="assets/images/flowers/flower_funeral.png" alt="Sympathy flowers" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-label">Funeral &amp; Sympathy</span>
+            <h3 class="card-title">Peaceful White Tribute</h3>
+            <p class="card-desc">A dignified and serene arrangement of white lilies and chrysanthemums to offer condolences.</p>
+            <div class="card-footer-row">
+              <span class="card-price">from GBP 55</span>
+              <a href="occasions.html#funeral" class="btn btn-outline btn-sm">View Details</a>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="300">
+          <div class="card-img-wrap">
+            <img src="assets/images/flowers/flower_congrats.png" alt="Congratulations flowers" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-label">Congratulations</span>
+            <h3 class="card-title">Achievement Celebration Bunch</h3>
+            <p class="card-desc">Vibrant yellow and gold blooms bursting with joy - perfect for every achievement and success.</p>
+            <div class="card-footer-row">
+              <span class="card-price">from GBP 40</span>
+              <a href="occasions.html#congrats" class="btn btn-outline btn-sm">View Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CTA 2 =============== -->
+  <section class="cta-section bg-cta-2" aria-label="Order CTA">
+    <div class="container">
+      <div class="cta-content" data-animate="zoom-in">
+        <span class="section-eyebrow" style="color:var(--secondary);"><i class="bi bi-flower2"></i> Fresh. Beautiful. Delivered.</span>
+        <h2 class="section-title">Order Your Perfect<br><em>Arrangement Today</em></h2>
+        <p class="section-subtitle">Join thousands of happy customers who trust Bloomora to deliver joy, every single time.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-white btn-lg"><i class="bi bi-envelope-heart"></i> Enquire Now</a>
+          <a href="gallery.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:white;"><i class="bi bi-images"></i> Browse Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER =============== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" style="margin-bottom:1rem; display:flex;">
+            <div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div>
+            <div class="brand-text">
+              <span class="brand-name">Bloomora</span>
+              <span class="brand-tagline">Fresh Flower Delivery</span>
+            </div>
+          </a>
+          <p class="footer-desc">Fresh handcrafted flower arrangements delivered to your door. Same-day delivery available across the city.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-link-45deg"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-link-45deg"></i>About Us</a></li>
+            <li><a href="occasions.html"><i class="bi bi-link-45deg"></i>Occasions</a></li>
+            <li><a href="seasonal-blooms.html"><i class="bi bi-link-45deg"></i>Seasonal Blooms</a></li>
+            <li><a href="delivery-areas.html"><i class="bi bi-link-45deg"></i>Delivery Areas</a></li>
+            <li><a href="gallery.html"><i class="bi bi-link-45deg"></i>Gallery</a></li>
+            <li><a href="contact.html"><i class="bi bi-link-45deg"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Contact Info</h3>
+          <div class="footer-contact">
+            <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>42 Blossom Lane, Floral Quarter,<br>London, EC1A 1BB</span></div>
+            <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+44 (0) 123 456 7890</span></div>
+            <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@bloomora.co.uk</span></div>
+            <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon-Sat: 7AM-8PM<br>Sun: 9AM-5PM</span></div>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3 class="footer-col-title">Newsletter</h3>
+          <p class="footer-newsletter-text">Subscribe for seasonal inspiration, exclusive offers, and fresh flower tips.</p>
+          <form data-form="newsletter" style="margin-bottom:1rem;">
+            <div class="input-group">
+              <input type="email" placeholder="Your email address" aria-label="Email for newsletter" required />
+              <button type="submit" class="btn btn-primary" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;">Subscribe</button>
+            </div>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);"><i class="bi bi-lock-fill"></i> Unsubscribe anytime.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">&copy; 2026 Bloomora Fresh Flower Delivery. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

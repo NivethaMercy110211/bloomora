@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Occasions</title>
+  <meta name="description" content="Find the perfect flower arrangement for every occasion - birthdays, anniversaries, weddings, funerals, and congratulations from Bloomora." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.7" />
+  <link rel="stylesheet" href="assets/css/pages.css?v=2.7" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="navbar-brand"><div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div><div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home 1</a></li><li><a href="home2.html" class="nav-link">Home 2</a></li><li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown"><a href="occasions.html" class="nav-link nav-dropdown-toggle active">Occasions <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i></a><ul class="dropdown-menu"><li><a href="occasions.html#birthday" class="dropdown-item"><i class="bi bi-balloon-heart"></i><span><strong>Birthday</strong><span>Bright celebration bouquets</span></span></a></li><li><a href="occasions.html#anniversary" class="dropdown-item"><i class="bi bi-heart-fill"></i><span><strong>Anniversary</strong><span>Romantic premium roses</span></span></a></li><li><a href="occasions.html#wedding" class="dropdown-item"><i class="bi bi-stars"></i><span><strong>Wedding</strong><span>Bridal and venue flowers</span></span></a></li><li><a href="occasions.html#funeral" class="dropdown-item"><i class="bi bi-flower2"></i><span><strong>Sympathy</strong><span>Calm respectful tributes</span></span></a></li><li><a href="occasions.html#congrats" class="dropdown-item"><i class="bi bi-trophy-fill"></i><span><strong>Congratulations</strong><span>For wins and milestones</span></span></a></li><li><a href="occasions.html#getwell" class="dropdown-item"><i class="bi bi-heart-pulse-fill"></i><span><strong>Get Well</strong><span>Warm recovery wishes</span></span></a></li></ul></li>
+        <li><a href="seasonal-blooms.html" class="nav-link">Seasonal Blooms</a></li><li><a href="delivery-areas.html" class="nav-link">Delivery Areas</a></li><li><a href="gallery.html" class="nav-link">Gallery</a></li><li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-controls"><button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button><a href="login.html" class="btn-login-nav nav-link"><i class="bi bi-person-fill"></i> Login</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links"><li><a href="index.html" class="mobile-nav-link">Home 1</a></li><li><a href="home2.html" class="mobile-nav-link">Home 2</a></li><li><a href="about.html" class="mobile-nav-link">About</a></li><li><a href="occasions.html" class="mobile-nav-link active">Occasions</a></li><li><a href="seasonal-blooms.html" class="mobile-nav-link">Seasonal Blooms</a></li><li><a href="delivery-areas.html" class="mobile-nav-link">Delivery Areas</a></li><li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li><li><a href="contact.html" class="mobile-nav-link">Contact</a></li></ul>
+    <div class="mobile-controls"><button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button></div>
+    <div class="mobile-login-btn"><a href="login.html" class="btn-login-nav" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i class="bi bi-person-fill"></i> Login to Your Account</a></div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner bg-banner-occasions" aria-label="Occasions banner">
+    <div class="container">
+      <div class="banner-content" data-animate="fade-up">
+        <span class="banner-eyebrow"><i class="bi bi-gift"></i> Flowers For Every Occasion</span>
+        <h1 class="banner-title">Flowers For<br><span>Every Occasion</span></h1>
+        <p class="banner-desc">From joyful birthdays to tender farewells - we have the perfect arrangement to express every emotion.</p>
+        <div class="banner-breadcrumb"><a href="index.html">Home</a><span class="sep"><i class="bi bi-chevron-right"></i></span><span>Occasions</span></div>
+      </div>
+    </div>
+    <div class="banner-deco"></div>
+  </section>
+
+  <div class="occasion-nav-strip" aria-label="Occasion shortcuts">
+    <div class="container">
+      <nav class="occasion-nav-scroll">
+        <a href="#birthday" class="occasion-nav-pill"><i class="bi bi-balloon-heart"></i> Birthday</a>
+        <a href="#anniversary" class="occasion-nav-pill"><i class="bi bi-heart-fill"></i> Anniversary</a>
+        <a href="#wedding" class="occasion-nav-pill"><i class="bi bi-stars"></i> Wedding</a>
+        <a href="#funeral" class="occasion-nav-pill"><i class="bi bi-flower2"></i> Sympathy</a>
+        <a href="#congrats" class="occasion-nav-pill"><i class="bi bi-trophy-fill"></i> Congratulations</a>
+        <a href="#getwell" class="occasion-nav-pill"><i class="bi bi-heart-pulse-fill"></i> Get Well</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- === OCCASION INTRO === -->
+  <section class="section" aria-label="Occasion overview">
+    <div class="container">
+      <div class="occasion-feature-layout">
+        <aside class="occasion-feature-panel" data-animate="fade-right">
+          <div>
+            <span class="section-eyebrow"><i class="bi bi-heart"></i> Handcrafted for Moments</span>
+            <h2 class="section-title">Choose Flowers By<br><em>The Feeling</em></h2>
+            <p class="section-subtitle" style="margin-bottom:0;">Our florists design each arrangement around the message you want to send: joy, love, comfort, pride, or care.</p>
+          </div>
+          <ul class="occasion-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i><span>Six curated occasion categories with direct page jumps.</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Same-day delivery options for urgent celebrations and support.</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Custom arrangements available when your occasion needs something personal.</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="justify-content:center; margin-top: 1.5rem; padding-top: 0.85rem; padding-bottom: 0.85rem;"><i class="bi bi-envelope-heart"></i> Start Custom Order</a>
+        </aside>
+
+        <div class="occasion-showcase-grid" data-animate="zoom-in">
+          <a href="#birthday" class="occasion-showcase-card">
+            <img src="assets/images/flowers/feeling_birthday.png" alt="Birthday flowers" loading="lazy" />
+            <div class="occasion-showcase-body"><strong>Birthday Flowers</strong><span>Bright bouquets that feel joyful and personal</span></div>
+          </a>
+          <a href="#anniversary" class="occasion-showcase-card">
+            <img src="assets/images/flowers/feeling_anniversary.png" alt="Anniversary flowers" loading="lazy" />
+            <div class="occasion-showcase-body"><strong>Anniversary</strong><span>Romantic roses and luxury stems</span></div>
+          </a>
+          <a href="#wedding" class="occasion-showcase-card">
+            <img src="assets/images/flowers/feeling_wedding.png" alt="Wedding flowers" loading="lazy" />
+            <div class="occasion-showcase-body"><strong>Wedding</strong><span>Bridal, ceremony, and reception flowers</span></div>
+          </a>
+          <a href="#funeral" class="occasion-showcase-card">
+            <img src="assets/images/flowers/feeling_sympathy.png" alt="Sympathy flowers" loading="lazy" />
+            <div class="occasion-showcase-body"><strong>Sympathy</strong><span>Graceful arrangements for difficult moments</span></div>
+          </a>
+          <a href="#congrats" class="occasion-showcase-card">
+            <img src="assets/images/flowers/feeling_congrats.png" alt="Congratulations flowers" loading="lazy" />
+            <div class="occasion-showcase-body"><strong>Congratulations</strong><span>Celebrate milestones and new beginnings</span></div>
+          </a>
+          <a href="#getwell" class="occasion-showcase-card">
+            <img src="assets/images/flowers/feeling_getwell.png" alt="Get well flowers" loading="lazy" />
+            <div class="occasion-showcase-body"><strong>Get Well</strong><span>Fresh, gentle colour for recovery wishes</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === BIRTHDAY EVENT SECTION === -->
+  <section id="birthday" class="section event-section event-birthday section-alt" aria-label="Birthday flower arrangements">
+    <div class="container">
+      <div class="event-layout">
+        <div class="event-copy" data-animate="fade-right">
+          <span class="section-eyebrow"><i class="bi bi-balloon-heart"></i> Birthday Event</span>
+          <h2 class="section-title">Birthday Flowers<br><em>For Bright Celebrations</em></h2>
+          <p>Make their day feel full of colour with cheerful birthday bouquets, party table flowers, gift add-ons, and same-day surprise delivery.</p>
+          <div class="occasion-tags"><span class="tag">Mixed Bouquets</span><span class="tag">Sunflowers</span><span class="tag">Gift Sets</span><span class="tag">Same-Day Delivery</span></div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Birthday Flowers</a>
+        </div>
+        <div class="event-gallery" data-animate="fade-left">
+          <img class="event-main-img" src="assets/images/flowers/flower_birthday.png" alt="Bright birthday bouquet" loading="lazy" />
+          <img src="assets/images/flowers/flower_summer.png" alt="Sunny birthday flower arrangement" loading="lazy" />
+          <img src="assets/images/cta/cta_home.png" alt="Birthday flower delivery presentation" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === ANNIVERSARY EVENT SECTION === -->
+  <section id="anniversary" class="section event-section event-anniversary" aria-label="Anniversary flower arrangements">
+    <div class="container">
+      <div class="event-layout reverse">
+        <div class="event-copy" data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-heart-fill"></i> Anniversary Event</span>
+          <h2 class="section-title">Anniversary Flowers<br><em>For Romantic Moments</em></h2>
+          <p>Premium roses, soft textures, candlelit colour palettes, and luxury wrapping for proposals, date nights, and milestone anniversaries.</p>
+          <div class="occasion-tags"><span class="tag">Red Roses</span><span class="tag">Peonies</span><span class="tag">Luxury Wrap</span><span class="tag">Card Message</span></div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Anniversary Flowers</a>
+        </div>
+        <div class="event-gallery" data-animate="fade-right">
+          <img class="event-main-img" src="assets/images/flowers/flower_anniversary.png" alt="Anniversary red rose bouquet" loading="lazy" />
+          <img src="assets/images/banners/banner_home2.png" alt="Romantic flower arrangement detail" loading="lazy" />
+          <img src="assets/images/cta/cta_occasions.png" alt="Luxury anniversary flower gift" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === WEDDING EVENT SECTION === -->
+  <section id="wedding" class="section event-section event-wedding section-alt" aria-label="Wedding flower arrangements">
+    <div class="container">
+      <div class="event-layout">
+        <div class="event-copy" data-animate="fade-right">
+          <span class="section-eyebrow"><i class="bi bi-stars"></i> Wedding Event</span>
+          <h2 class="section-title">Wedding Flowers<br><em>For The Full Day</em></h2>
+          <p>From bridal bouquets to arches, table centrepieces, aisle florals, buttonholes, and reception styling, we plan wedding flowers as one complete visual story.</p>
+          <div class="occasion-tags"><span class="tag">Bridal Bouquet</span><span class="tag">Ceremony Arch</span><span class="tag">Reception Decor</span><span class="tag">Consultation</span></div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-calendar-heart"></i> Plan Wedding Flowers</a>
+        </div>
+        <div class="event-gallery" data-animate="fade-left">
+          <img class="event-main-img" src="assets/images/wedding/wedding_main.png" alt="Bridal wedding bouquet" loading="lazy" />
+          <img src="assets/images/wedding/wedding_secondary.png" alt="Wedding floral event setting" loading="lazy" />
+          <img src="assets/images/cta/cta_gallery.png" alt="Wedding flower table arrangement" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SYMPATHY EVENT SECTION === -->
+  <section id="funeral" class="section event-section event-sympathy" aria-label="Funeral and sympathy flower arrangements">
+    <div class="container">
+      <div class="event-layout reverse">
+        <div class="event-copy" data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-flower2"></i> Sympathy Event</span>
+          <h2 class="section-title">Sympathy Flowers<br><em>With Calm Respect</em></h2>
+          <p>Soft white florals, wreaths, baskets, and memorial sprays prepared with dignity, careful timing, and gentle presentation.</p>
+          <div class="occasion-tags"><span class="tag">White Lilies</span><span class="tag">Wreaths</span><span class="tag">Memorial Baskets</span><span class="tag">Timed Delivery</span></div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order Sympathy Flowers</a>
+        </div>
+        <div class="event-gallery" data-animate="fade-right">
+          <img class="event-main-img" src="assets/images/flowers/sympathy_main.png" alt="White sympathy flower arrangement" loading="lazy" />
+          <img src="assets/images/flowers/sympathy_secondary.png" alt="Calm white floral tribute" loading="lazy" />
+          <img src="assets/images/cta/cta_about.png" alt="Respectful sympathy flowers" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CONGRATULATIONS EVENT SECTION === -->
+  <section id="congrats" class="section event-section event-congrats section-alt" aria-label="Congratulations flower arrangements">
+    <div class="container">
+      <div class="event-layout">
+        <div class="event-copy" data-animate="fade-right">
+          <span class="section-eyebrow"><i class="bi bi-trophy-fill"></i> Congratulations Event</span>
+          <h2 class="section-title">Congratulations Flowers<br><em>For Big Wins</em></h2>
+          <p>Bold celebration flowers for promotions, graduations, new homes, new babies, launches, and every proud milestone.</p>
+          <div class="occasion-tags"><span class="tag">Graduation</span><span class="tag">Promotion</span><span class="tag">New Home</span><span class="tag">New Baby</span></div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-gift-fill"></i> Send Congratulations</a>
+        </div>
+        <div class="event-gallery" data-animate="fade-left">
+          <img class="event-main-img" src="assets/images/flowers/congrats_main.png" alt="Congratulations flower bouquet" loading="lazy" />
+          <img src="assets/images/flowers/congrats_secondary.png" alt="Fresh celebration flowers" loading="lazy" />
+          <img src="assets/images/cta/cta_contact.png" alt="Celebration bouquet delivery" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === GET WELL EVENT SECTION === -->
+  <section id="getwell" class="section event-section event-getwell" aria-label="Get well flower arrangements">
+    <div class="container">
+      <div class="event-layout reverse">
+        <div class="event-copy" data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-heart-pulse-fill"></i> Get Well Event</span>
+          <h2 class="section-title">Get Well Flowers<br><em>For Gentle Recovery</em></h2>
+          <p>Soft, uplifting arrangements and potted plants chosen for hospital-friendly size, gentle colour, and fresh bedside presentation.</p>
+          <div class="occasion-tags"><span class="tag">Hospital Delivery</span><span class="tag">Potted Plants</span><span class="tag">Soft Colour</span><span class="tag">Care Notes</span></div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Send Get Well Wishes</a>
+        </div>
+        <div class="event-gallery" data-animate="fade-right">
+          <img class="event-main-img" src="assets/images/flowers/getwell_main.png" alt="Get well flower arrangement" loading="lazy" />
+          <img src="assets/images/flowers/getwell_secondary.png" alt="Soft blue recovery flowers" loading="lazy" />
+          <img src="assets/images/cta/cta_delivery.png" alt="Fresh get well flower delivery" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CTA === -->
+  <section class="cta-section bg-cta-4" aria-label="Order enquiry CTA">
+    <div class="container">
+      <div class="cta-content" data-animate="zoom-in">
+        <span class="section-eyebrow" style="color:var(--secondary);"><i class="bi bi-envelope-heart"></i> Send Your Enquiry</span>
+        <h2 class="section-title">Can't Find What<br><em>You're Looking For?</em></h2>
+        <p class="section-subtitle">Our florists specialise in custom arrangements. Tell us the occasion and we'll create something truly unique for you.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-white btn-lg"><i class="bi bi-chat-dots-fill"></i> Send Custom Enquiry</a>
+          <a href="tel:+441234567890" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:white;"><i class="bi bi-telephone-fill"></i> Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="navbar-brand" style="margin-bottom:1rem; display:flex;"><div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div><div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div></a><p class="footer-desc">Fresh handcrafted flower arrangements delivered to your door. Same-day delivery available across the city.</p><div class="social-links"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a><a href="#" class="social-link"><i class="bi bi-instagram"></i></a><a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a><a href="#" class="social-link"><i class="bi bi-pinterest"></i></a><a href="#" class="social-link"><i class="bi bi-tiktok"></i></a></div></div>
+        <div><h3 class="footer-col-title">Quick Links</h3><ul class="footer-links"><li><a href="index.html"><i class="bi bi-link-45deg"></i>Home</a></li><li><a href="about.html"><i class="bi bi-link-45deg"></i>About Us</a></li><li><a href="occasions.html"><i class="bi bi-link-45deg"></i>Occasions</a></li><li><a href="seasonal-blooms.html"><i class="bi bi-link-45deg"></i>Seasonal Blooms</a></li><li><a href="delivery-areas.html"><i class="bi bi-link-45deg"></i>Delivery Areas</a></li><li><a href="gallery.html"><i class="bi bi-link-45deg"></i>Gallery</a></li><li><a href="contact.html"><i class="bi bi-link-45deg"></i>Contact Us</a></li></ul></div>
+        <div><h3 class="footer-col-title">Contact Info</h3><div class="footer-contact"><div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>42 Blossom Lane, London EC1A 1BB</span></div><div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+44 (0) 123 456 7890</span></div><div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@bloomora.co.uk</span></div><div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon-Sat: 7AM-8PM, Sun: 9AM-5PM</span></div></div></div>
+        <div class="footer-newsletter"><h3 class="footer-col-title">Newsletter</h3><p class="footer-newsletter-text">Get seasonal inspiration and exclusive offers.</p><form data-form="newsletter" style="margin-bottom:1rem;"><div class="input-group"><input type="email" placeholder="Your email address" required /><button type="submit" class="btn btn-primary" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;">Subscribe</button></div></form><p style="font-size:0.75rem;color:rgba(255,255,255,0.35);"><i class="bi bi-lock-fill"></i> Unsubscribe anytime.</p></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 Bloomora Fresh Flower Delivery. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Areas</title>
+  <meta name="description" content="Bloomora delivers fresh flowers same-day to London and surrounding areas. Check our delivery coverage, time slots, and delivery process." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3.6" />
+  <link rel="stylesheet" href="assets/css/pages.css?v=3.6" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="navbar-brand"><div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div><div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home 1</a></li><li><a href="home2.html" class="nav-link">Home 2</a></li><li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown"><a href="occasions.html" class="nav-link nav-dropdown-toggle">Occasions <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i></a><ul class="dropdown-menu"><li><a href="occasions.html#birthday" class="dropdown-item"><i class="bi bi-balloon-heart"></i><span><strong>Birthday</strong><span>Bright celebration bouquets</span></span></a></li><li><a href="occasions.html#anniversary" class="dropdown-item"><i class="bi bi-heart-fill"></i><span><strong>Anniversary</strong><span>Romantic premium roses</span></span></a></li><li><a href="occasions.html#wedding" class="dropdown-item"><i class="bi bi-stars"></i><span><strong>Wedding</strong><span>Bridal and venue flowers</span></span></a></li><li><a href="occasions.html#funeral" class="dropdown-item"><i class="bi bi-flower2"></i><span><strong>Sympathy</strong><span>Calm respectful tributes</span></span></a></li><li><a href="occasions.html#congrats" class="dropdown-item"><i class="bi bi-trophy-fill"></i><span><strong>Congratulations</strong><span>For wins and milestones</span></span></a></li><li><a href="occasions.html#getwell" class="dropdown-item"><i class="bi bi-heart-pulse-fill"></i><span><strong>Get Well</strong><span>Warm recovery wishes</span></span></a></li></ul></li>
+        <li><a href="seasonal-blooms.html" class="nav-link">Seasonal Blooms</a></li><li><a href="delivery-areas.html" class="nav-link active">Delivery Areas</a></li><li><a href="gallery.html" class="nav-link">Gallery</a></li><li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-controls"><button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button><a href="login.html" class="btn-login-nav nav-link"><i class="bi bi-person-fill"></i> Login</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links"><li><a href="index.html" class="mobile-nav-link">Home 1</a></li><li><a href="home2.html" class="mobile-nav-link">Home 2</a></li><li><a href="about.html" class="mobile-nav-link">About</a></li><li><a href="occasions.html" class="mobile-nav-link">Occasions</a></li><li><a href="seasonal-blooms.html" class="mobile-nav-link">Seasonal Blooms</a></li><li><a href="delivery-areas.html" class="mobile-nav-link active">Delivery Areas</a></li><li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li><li><a href="contact.html" class="mobile-nav-link">Contact</a></li></ul>
+    <div class="mobile-controls"><button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button></div>
+    <div class="mobile-login-btn"><a href="login.html" class="btn-login-nav" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i class="bi bi-person-fill"></i> Login to Your Account</a></div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner bg-banner-delivery" aria-label="Delivery areas banner">
+    <div class="container">
+      <div class="banner-content" data-animate="fade-up">
+        <span class="banner-eyebrow"><i class="bi bi-truck"></i> Delivered to Your Door</span>
+        <h1 class="banner-title">We Deliver Happiness<br><span>To Your Doorstep</span></h1>
+        <p class="banner-desc">Same-day flower delivery available across London and surrounding areas. Order before 2 PM for delivery today.</p>
+        <div class="banner-breadcrumb"><a href="index.html">Home</a><span class="sep"><i class="bi bi-chevron-right"></i></span><span>Delivery Areas</span></div>
+      </div>
+    </div>
+    <div class="banner-deco"></div>
+  </section>
+
+  <!-- === COVERAGE MAP === -->
+  <section class="section" aria-label="Delivery coverage map">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-geo-alt"></i> Coverage Area</span>
+        <h2 class="section-title">Our Delivery Areas</h2>
+        <p class="section-subtitle">We cover over 50 areas across London and the South East. Find your area below.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="split-section" style="gap:3rem;">
+        <div data-animate="fade-right">
+          <div class="map-placeholder" style="min-height:400px;">
+            <div style="text-align:center;">
+              <i class="bi bi-map" style="font-size:4rem;color:var(--primary);opacity:0.4;display:block;margin-bottom:1rem;"></i>
+              <p style="color:var(--text-muted);font-size:0.9rem;">Interactive delivery map</p>
+              <p style="color:var(--text-muted);font-size:0.8rem;">Covering London &amp; South East England</p>
+            </div>
+          </div>
+        </div>
+        <div data-animate="fade-left">
+          <h3 style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:1rem;">Coverage by Zone</h3>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;background:rgba(248,93,142,0.08);border-radius:var(--radius-sm);border-left:3px solid var(--primary);">
+              <i class="bi bi-circle-fill" style="color:var(--primary);font-size:0.6rem;"></i>
+              <div><strong style="font-size:0.9rem;">Zone 1 - Central London</strong><p style="font-size:0.78rem;color:var(--text-muted);margin:0;">Same-day delivery guaranteed</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;background:rgba(248,93,142,0.04);border-radius:var(--radius-sm);border-left:3px solid var(--primary-light);">
+              <i class="bi bi-circle-fill" style="color:var(--primary-light);font-size:0.6rem;"></i>
+              <div><strong style="font-size:0.9rem;">Zone 2 - Greater London</strong><p style="font-size:0.78rem;color:var(--text-muted);margin:0;">Same-day delivery, order by 12 PM</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;background:rgba(248,93,142,0.02);border-radius:var(--radius-sm);border-left:3px solid #ff9ebb;">
+              <i class="bi bi-circle-fill" style="color:#ff9ebb;font-size:0.6rem;"></i>
+              <div><strong style="font-size:0.9rem;">Zone 3 - South East England</strong><p style="font-size:0.78rem;color:var(--text-muted);margin:0;">Next-day delivery available</p></div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-search"></i> Check Your Postcode</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SAME-DAY DELIVERY RULES === -->
+  <section class="section section-alt" aria-label="Same-day delivery rules">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-lightning-charge"></i> Same-Day Rules</span>
+        <h2 class="section-title">Same-Day Delivery</h2>
+        <p class="section-subtitle">Everything you need to know about our same-day flower delivery service.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3">
+        <div class="value-card" data-animate="fade-up" data-delay="100">
+          <div class="value-icon"><i class="bi bi-clock"></i></div>
+          <h3>Order Cutoff Times</h3>
+          <p>Order before 2 PM Monday-Saturday for guaranteed same-day delivery within Central London. Sunday orders by 11 AM.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="200">
+          <div class="value-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <h3>Coverage Requirements</h3>
+          <p>Delivery address must be within our covered zones. Enter your postcode on the contact form to confirm availability.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="300">
+          <div class="value-icon"><i class="bi bi-calendar-check"></i></div>
+          <h3>Weekend Delivery</h3>
+          <p>We deliver 7 days a week. Weekend deliveries require slightly earlier order cutoff times for same-day service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CITY / AREA LIST === -->
+  <section class="section" aria-label="Delivery area list">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-list-check"></i> Areas We Serve</span>
+        <h2 class="section-title">Delivery Area List</h2>
+        <p class="section-subtitle">We deliver to over 50 areas across London and the South East.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="city-list-grid" data-animate="fade-up">
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Central London<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Westminster<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Kensington<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Chelsea<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Islington<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Camden<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Hackney<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Tower Hamlets<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Southwark<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Lambeth<span class="same-day">Same Day</span></div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Wandsworth</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Richmond</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Kingston upon Thames</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Croydon</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Bromley</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Greenwich</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Lewisham</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Bexley</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Barnet</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Ealing</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Hammersmith</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Hounslow</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Harrow</div>
+        <div class="city-item"><i class="bi bi-geo-alt-fill"></i>Enfield</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === DELIVERY TIME SLOTS === -->
+  <section class="section section-alt" aria-label="Delivery time slots">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-clock"></i> Choose Your Slot</span>
+        <h2 class="section-title">Delivery Time Slots</h2>
+        <p class="section-subtitle">Select the delivery time that suits you best when placing your order.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3">
+        <div class="timeslot-card" data-animate="fade-up" data-delay="100">
+          <div class="timeslot-icon"><i class="bi bi-sunrise"></i></div>
+          <div class="timeslot-info"><strong>Morning Delivery</strong><span>7:00 AM - 12:00 PM</span></div>
+        </div>
+        <div class="timeslot-card" data-animate="fade-up" data-delay="200">
+          <div class="timeslot-icon"><i class="bi bi-sun"></i></div>
+          <div class="timeslot-info"><strong>Afternoon Delivery</strong><span>12:00 PM - 5:00 PM</span></div>
+        </div>
+        <div class="timeslot-card" data-animate="fade-up" data-delay="300">
+          <div class="timeslot-icon"><i class="bi bi-moon-stars"></i></div>
+          <div class="timeslot-info"><strong>Evening Delivery</strong><span>5:00 PM - 8:00 PM</span></div>
+        </div>
+        <div class="timeslot-card" data-animate="fade-up" data-delay="400">
+          <div class="timeslot-icon"><i class="bi bi-lightning-charge"></i></div>
+          <div class="timeslot-info"><strong>Express 2-Hour</strong><span>Available in Central London only</span></div>
+        </div>
+        <div class="timeslot-card" data-animate="fade-up" data-delay="500">
+          <div class="timeslot-icon"><i class="bi bi-calendar2-week"></i></div>
+          <div class="timeslot-info"><strong>Schedule Ahead</strong><span>Book up to 14 days in advance</span></div>
+        </div>
+        <div class="timeslot-card" data-animate="fade-up" data-delay="600">
+          <div class="timeslot-icon"><i class="bi bi-chat-dots"></i></div>
+          <div class="timeslot-info"><strong>Custom Time Request</strong><span>Contact us for specific times</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === ORDER PROCESS === -->
+  <section class="section" aria-label="Order process">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-diagram-3"></i> How It Works</span>
+        <h2 class="section-title">Our Simple Order Process</h2>
+        <p class="section-subtitle">Order fresh flowers in just four easy steps and we'll handle the rest.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-4" style="margin-top:2.5rem;">
+        <div class="process-card" data-animate="fade-up" data-delay="100">
+          <span class="process-num">1</span>
+          <div class="process-icon"><i class="bi bi-search"></i></div>
+          <h3>Choose Flowers</h3>
+          <p>Browse our collection<br class="mobile-br"> and select your preferred<br class="mobile-br"> arrangement or request<br class="mobile-br"> a custom bouquet.</p>
+        </div>
+        <div class="process-card" data-animate="fade-up" data-delay="200">
+          <span class="process-num">2</span>
+          <div class="process-icon"><i class="bi bi-envelope-plus"></i></div>
+          <h3>Place Order</h3>
+          <p>Submit your enquiry form<br class="mobile-br"> or call us. Specify the<br class="mobile-br"> delivery address, date, time,<br class="mobile-br"> and any special requests.</p>
+        </div>
+        <div class="process-card" data-animate="fade-up" data-delay="300">
+          <span class="process-num">3</span>
+          <div class="process-icon"><i class="bi bi-scissors"></i></div>
+          <h3>We Craft</h3>
+          <p>Our florists hand-craft<br class="mobile-br"> your arrangement fresh on<br class="mobile-br"> the day of delivery using<br class="mobile-br"> the finest seasonal blooms.</p>
+        </div>
+        <div class="process-card" data-animate="fade-up" data-delay="400">
+          <span class="process-num">4</span>
+          <div class="process-icon"><i class="bi bi-house-heart"></i></div>
+          <h3>Delivered</h3>
+          <p>Your flowers are delivered<br class="mobile-br"> fresh to the door in<br class="mobile-br"> eco-friendly packaging with<br class="mobile-br"> delivery confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SUPPORT === -->
+  <section class="section section-alt" aria-label="Delivery support">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-headset"></i> We're Here to Help</span>
+        <h2 class="section-title">Delivery Support</h2>
+        <p class="section-subtitle">Got a question about your delivery? Our team is always ready to assist.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3">
+        <div class="support-card" data-animate="fade-up" data-delay="100">
+          <div class="support-icon"><i class="bi bi-telephone-fill"></i></div>
+          <h3>Call Us</h3>
+          <p>Speak directly with our team<br class="support-br"> for immediate help with your<br class="support-br"> order or delivery enquiry.</p>
+          <a href="tel:+441234567890" class="btn btn-primary btn-sm">+44 123 456 7890</a>
+        </div>
+        <div class="support-card" data-animate="fade-up" data-delay="200">
+          <div class="support-icon"><i class="bi bi-envelope-fill"></i></div>
+          <h3>Email Support</h3>
+          <p>Send us a detailed message<br class="support-br"> and we'll respond within<br class="support-br"> 2 hours during business hours.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm">Send a Message</a>
+        </div>
+        <div class="support-card" data-animate="fade-up" data-delay="300">
+          <div class="support-icon"><i class="bi bi-chat-dots-fill"></i></div>
+          <h3>Live Chat</h3>
+          <p>Chat with us in real time<br class="support-br"> via our website chat or WhatsApp<br class="support-br"> for quick answers to questions.</p>
+          <a href="#" class="btn btn-primary btn-sm">Start Chat</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CTA === -->
+  <section class="cta-section bg-cta-7" aria-label="Delivery CTA">
+    <div class="container">
+      <div class="cta-content" data-animate="zoom-in">
+        <span class="section-eyebrow" style="color:var(--secondary);"><i class="bi bi-truck"></i> Fast &amp; Reliable</span>
+        <h2 class="section-title">Order Now for<br><em>Same-Day Delivery</em></h2>
+        <p class="section-subtitle">Cutoff time is 2 PM for same-day delivery. Don't miss your window - order your flowers now.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-white btn-lg"><i class="bi bi-envelope-heart"></i> Place Your Order</a>
+          <a href="tel:+441234567890" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:white;"><i class="bi bi-telephone-fill"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="navbar-brand" style="margin-bottom:1rem; display:flex;"><div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div><div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div></a><p class="footer-desc">Fresh handcrafted flower arrangements delivered to your door. Same-day delivery available across the city.</p><div class="social-links"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a><a href="#" class="social-link"><i class="bi bi-instagram"></i></a><a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a><a href="#" class="social-link"><i class="bi bi-pinterest"></i></a><a href="#" class="social-link"><i class="bi bi-tiktok"></i></a></div></div>
+        <div><h3 class="footer-col-title">Quick Links</h3><ul class="footer-links"><li><a href="index.html"><i class="bi bi-link-45deg"></i>Home</a></li><li><a href="about.html"><i class="bi bi-link-45deg"></i>About Us</a></li><li><a href="occasions.html"><i class="bi bi-link-45deg"></i>Occasions</a></li><li><a href="seasonal-blooms.html"><i class="bi bi-link-45deg"></i>Seasonal Blooms</a></li><li><a href="delivery-areas.html"><i class="bi bi-link-45deg"></i>Delivery Areas</a></li><li><a href="gallery.html"><i class="bi bi-link-45deg"></i>Gallery</a></li><li><a href="contact.html"><i class="bi bi-link-45deg"></i>Contact Us</a></li></ul></div>
+        <div><h3 class="footer-col-title">Contact Info</h3><div class="footer-contact"><div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>42 Blossom Lane, London EC1A 1BB</span></div><div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+44 (0) 123 456 7890</span></div><div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@bloomora.co.uk</span></div><div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon-Sat: 7AM-8PM, Sun: 9AM-5PM</span></div></div></div>
+        <div class="footer-newsletter"><h3 class="footer-col-title">Newsletter</h3><p class="footer-newsletter-text">Get seasonal inspiration and exclusive offers.</p><form data-form="newsletter" style="margin-bottom:1rem;"><div class="input-group"><input type="email" placeholder="Your email address" required /><button type="submit" class="btn btn-primary" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;">Subscribe</button></div></form><p style="font-size:0.75rem;color:rgba(255,255,255,0.35);"><i class="bi bi-lock-fill"></i> Unsubscribe anytime.</p></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 Bloomora Fresh Flower Delivery. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

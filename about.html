@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <meta name="description" content="Learn about Bloomora's story, our passionate florist team, fresh flower sourcing, and our commitment to quality and customer satisfaction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.7" />
+  <link rel="stylesheet" href="assets/css/pages.css?v=2.7" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="navbar-brand"><div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div><div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home 1</a></li>
+        <li><a href="home2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li class="nav-dropdown">
+          <a href="occasions.html" class="nav-link nav-dropdown-toggle">Occasions <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="occasions.html#birthday" class="dropdown-item"><i class="bi bi-balloon-heart"></i><span><strong>Birthday</strong><span>Bright celebration bouquets</span></span></a></li>
+            <li><a href="occasions.html#anniversary" class="dropdown-item"><i class="bi bi-heart-fill"></i><span><strong>Anniversary</strong><span>Romantic premium roses</span></span></a></li>
+            <li><a href="occasions.html#wedding" class="dropdown-item"><i class="bi bi-stars"></i><span><strong>Wedding</strong><span>Bridal and venue flowers</span></span></a></li>
+            <li><a href="occasions.html#funeral" class="dropdown-item"><i class="bi bi-flower2"></i><span><strong>Sympathy</strong><span>Calm respectful tributes</span></span></a></li>
+            <li><a href="occasions.html#congrats" class="dropdown-item"><i class="bi bi-trophy-fill"></i><span><strong>Congratulations</strong><span>For wins and milestones</span></span></a></li>
+            <li><a href="occasions.html#getwell" class="dropdown-item"><i class="bi bi-heart-pulse-fill"></i><span><strong>Get Well</strong><span>Warm recovery wishes</span></span></a></li>
+          </ul>
+        </li>
+        <li><a href="seasonal-blooms.html" class="nav-link">Seasonal Blooms</a></li>
+        <li><a href="delivery-areas.html" class="nav-link">Delivery Areas</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-icon-btn toggle-theme-btn" aria-label="Toggle dark mode"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button>
+        <button class="nav-icon-btn toggle-dir-btn" aria-label="Toggle direction"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button>
+        <a href="login.html" class="btn-login-nav nav-link"><i class="bi bi-person-fill"></i> Login</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home 1</a></li><li><a href="home2.html" class="mobile-nav-link">Home 2</a></li><li><a href="about.html" class="mobile-nav-link active">About</a></li><li><a href="occasions.html" class="mobile-nav-link">Occasions</a></li><li><a href="seasonal-blooms.html" class="mobile-nav-link">Seasonal Blooms</a></li><li><a href="delivery-areas.html" class="mobile-nav-link">Delivery Areas</a></li><li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li><li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-controls"><button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button></div>
+    <div class="mobile-login-btn"><a href="login.html" class="btn-login-nav" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i class="bi bi-person-fill"></i> Login to Your Account</a></div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner bg-banner-about" aria-label="About page banner">
+    <div class="container">
+      <div class="banner-content" data-animate="fade-up">
+        <span class="banner-eyebrow"><i class="bi bi-flower2"></i> Our Story</span>
+        <h1 class="banner-title">About <span>Bloomora</span></h1>
+        <p class="banner-desc">Connecting hearts through fresh, handcrafted flowers. A decade of passion, expertise, and love for the art of floristry.</p>
+        <div class="banner-breadcrumb">
+          <a href="index.html">Home</a><span class="sep"><i class="bi bi-chevron-right"></i></span><span>About Us</span>
+        </div>
+      </div>
+    </div>
+    <div class="banner-deco"></div>
+  </section>
+
+  <!-- === BRAND STORY === -->
+  <section class="section" aria-label="Brand story">
+    <div class="container">
+      <div class="split-section">
+        <div data-animate="fade-right">
+          <span class="section-eyebrow"><i class="bi bi-book"></i> Our Story</span>
+          <h2 class="section-title">Where Every Flower<br><em>Tells a Story</em></h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+            Bloomora was founded in 2014 by head florist <strong style="color:var(--text);">Isabella Rose</strong>, a passionate horticulturalist who believed that flowers have the unique power to speak when words fall short.
+          </p>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;">
+            What started as a small boutique on Blossom Lane has grown into one of the city's most trusted flower delivery services, delivering over 15,000 arrangements each year to homes, offices, and celebrations across the region.
+          </p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;">
+            <div style="padding:1.25rem;background:var(--bg-alt);border-radius:var(--radius-sm);text-align:center;">
+              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--primary);">2014</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">Year Founded</div>
+            </div>
+            <div style="padding:1.25rem;background:var(--bg-alt);border-radius:var(--radius-sm);text-align:center;">
+              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--primary);">50+</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">Delivery Areas</div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Get in Touch</a>
+        </div>
+        <div class="img-reveal" data-animate="fade-left">
+          <img src="assets/images/banners/about_story.png" alt="Inside the Bloomora flower shop - florist hand-crafting a bouquet" style="width:100%;height:480px;object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === STATS === -->
+  <section class="section section-alt milestones-section" aria-label="Company milestones">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-graph-up"></i> Our Milestones</span>
+        <h2 class="section-title">A Decade of Floral Excellence</h2>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+      <div class="stats-grid">
+        <div class="stat-item" data-animate="zoom-in" data-delay="100"><div class="stat-number" data-count="15000" data-suffix="+">15,000+</div><div class="stat-label">Arrangements Delivered</div></div>
+        <div class="stat-item" data-animate="zoom-in" data-delay="200"><div class="stat-number" data-count="98" data-suffix="%">98%</div><div class="stat-label">Customer Satisfaction</div></div>
+        <div class="stat-item" data-animate="zoom-in" data-delay="300"><div class="stat-number" data-count="200" data-suffix="+">200+</div><div class="stat-label">Flower Varieties</div></div>
+        <div class="stat-item" data-animate="zoom-in" data-delay="400"><div class="stat-number" data-count="10" data-suffix="+">10+</div><div class="stat-label">Years of Florist Experience</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FLORIST TEAM === -->
+  <section class="section" aria-label="Our florist team">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-people"></i> Our Team</span>
+        <h2 class="section-title">Meet Our Florists</h2>
+        <p class="section-subtitle">Passionate professionals who bring artistry and care to every single arrangement.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-4 about-team-grid">
+        <div class="team-card" data-animate="fade-up" data-delay="100">
+          <div class="team-avatar">
+            <img src="assets/images/team/team_isabella.png" alt="Isabella Rose - Head Florist & Founder" />
+          </div>
+          <h3>Isabella Rose</h3>
+          <div class="team-role">Head Florist &amp; Founder</div>
+          <p class="team-bio">15 years of floristry expertise.<br class="desktop-team-break"> Specialises in wedding<br class="desktop-team-break"> and event design with<br class="desktop-team-break"> a passion for seasonal<br class="desktop-team-break"> blooms.</p>
+        </div>
+        <div class="team-card" data-animate="fade-up" data-delay="200">
+          <div class="team-avatar">
+            <img src="assets/images/team/team_liam.png" alt="Liam Fernsby - Senior Florist" />
+          </div>
+          <h3>Liam Fernsby</h3>
+          <div class="team-role">Senior Florist</div>
+          <p class="team-bio">Expert in sympathy<br class="desktop-team-break"> and tribute arrangements.<br class="desktop-team-break"> Known for creating<br class="desktop-team-break"> deeply meaningful<br class="desktop-team-break"> floral designs.</p>
+        </div>
+        <div class="team-card" data-animate="fade-up" data-delay="300">
+          <div class="team-avatar">
+            <img src="assets/images/team/team_amara.png" alt="Amara Singh - Creative Florist" />
+          </div>
+          <h3>Amara Singh</h3>
+          <div class="team-role">Creative Florist</div>
+          <p class="team-bio">Brings vibrant colours<br class="desktop-team-break"> and bold creativity<br class="desktop-team-break"> to birthday and<br class="desktop-team-break"> celebration<br class="desktop-team-break"> arrangements.</p>
+        </div>
+        <div class="team-card" data-animate="fade-up" data-delay="400">
+          <div class="team-avatar">
+            <img src="assets/images/team/team_hannah.png" alt="Hannah Brooks - Floral Designer" />
+          </div>
+          <h3>Hannah Brooks</h3>
+          <div class="team-role">Floral Designer</div>
+          <p class="team-bio">Specialises in minimalist<br class="desktop-team-break"> and contemporary floral art,<br class="desktop-team-break"> with a focus on<br class="desktop-team-break"> seasonal and sustainable<br class="desktop-team-break"> blooms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FRESH FLOWER SOURCING === -->
+  <section class="section section-alt" aria-label="Flower sourcing">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-geo-alt"></i> Farm to Doorstep</span>
+        <h2 class="section-title">Our Fresh Flower Sourcing</h2>
+        <p class="section-subtitle">We believe the best arrangements start with the finest flowers, sourced responsibly.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3">
+        <div class="sourcing-card" data-animate="fade-up" data-delay="100">
+          <div class="sourcing-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <h3>UK Partner Farms</h3>
+          <p>We work closely with certified UK growers in Lincolnshire, Cornwall, and the Scilly Isles to bring you the finest British blooms.</p>
+        </div>
+        <div class="sourcing-card" data-animate="fade-up" data-delay="200">
+          <div class="sourcing-icon"><i class="bi bi-flower3"></i></div>
+          <h3>European Excellence</h3>
+          <p>Premium roses from Ecuador and Kenya, tulips from Holland - the world's best flowers delivered fresh to our studio daily.</p>
+        </div>
+        <div class="sourcing-card" data-animate="fade-up" data-delay="300">
+          <div class="sourcing-icon"><i class="bi bi-recycle"></i></div>
+          <h3>Sustainable Practices</h3>
+          <p>We prioritise ethically sourced, eco-friendly flowers and use biodegradable packaging to reduce our environmental footprint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === QUALITY PROMISE === -->
+  <section class="section" aria-label="Quality promise">
+    <div class="container">
+      <div class="split-section reverse">
+        <div class="img-reveal" data-animate="fade-right">
+          <img src="assets/images/banners/banner_home1.png" alt="Premium flower quality" style="width:100%;height:460px;object-fit:cover;" />
+        </div>
+        <div data-animate="fade-left">
+          <span class="section-eyebrow"><i class="bi bi-patch-check"></i> Our Promise</span>
+          <h2 class="section-title">Our Quality<br><em>Guarantee to You</em></h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;">
+            Every arrangement that leaves our studio meets our strict quality standards. We guarantee your flowers will be fresh and beautiful for at least 7 days.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem;background:var(--bg-alt);border-radius:var(--radius-sm);">
+              <i class="bi bi-check-circle-fill" style="color:var(--accent);font-size:1.2rem;flex-shrink:0;"></i>
+              <div><strong style="font-size:0.9rem;">7-Day Freshness Promise</strong><p style="font-size:0.8rem;color:var(--text-muted);margin:0;">Guaranteed to last at least 7 days from delivery</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem;background:var(--bg-alt);border-radius:var(--radius-sm);">
+              <i class="bi bi-check-circle-fill" style="color:var(--accent);font-size:1.2rem;flex-shrink:0;"></i>
+              <div><strong style="font-size:0.9rem;">Free Replacement</strong><p style="font-size:0.8rem;color:var(--text-muted);margin:0;">If flowers don't meet standards, we replace them free</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem;background:var(--bg-alt);border-radius:var(--radius-sm);">
+              <i class="bi bi-check-circle-fill" style="color:var(--accent);font-size:1.2rem;flex-shrink:0;"></i>
+              <div><strong style="font-size:0.9rem;">Handcrafted Every Time</strong><p style="font-size:0.8rem;color:var(--text-muted);margin:0;">No mass production - every bouquet is made by hand</p></div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary"><i class="bi bi-envelope-heart"></i> Order with Confidence</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FLOWER CARE VALUES === -->
+  <section class="section section-alt" aria-label="Flower care values">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-heart"></i> Our Values</span>
+        <h2 class="section-title">What We Believe In</h2>
+        <p class="section-subtitle">Our core values guide every decision we make, from sourcing to delivery.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="card-grid card-grid-3 our-values-grid">
+        <div class="value-card" data-animate="fade-up" data-delay="100">
+          <div class="value-icon"><i class="bi bi-heart-fill"></i></div>
+          <h3>Made with Passion</h3>
+          <p>Every arrangement is crafted with genuine passion and artistic care. We love what we do, and it shows.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="200">
+          <div class="value-icon"><i class="bi bi-flower3"></i></div>
+          <h3>Respect for Nature</h3>
+          <p>We source seasonally, use biodegradable materials, and minimise waste in everything we do.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="300">
+          <div class="value-icon"><i class="bi bi-people-fill"></i></div>
+          <h3>Community First</h3>
+          <p>We partner with local UK growers and give back to our community through floral donation programmes.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="400">
+          <div class="value-icon"><i class="bi bi-shield-check"></i></div>
+          <h3>Honest &amp; Transparent</h3>
+          <p>Clear pricing, no hidden fees, and honest communication with every single one of our customers.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="500">
+          <div class="value-icon"><i class="bi bi-award-fill"></i></div>
+          <h3>Always Improving</h3>
+          <p>We continuously train our team and update our skills to deliver the best possible floral experience.</p>
+        </div>
+        <div class="value-card" data-animate="fade-up" data-delay="600">
+          <div class="value-icon"><i class="bi bi-truck"></i></div>
+          <h3>Reliable Delivery</h3>
+          <p>We take punctuality seriously. Your flowers arrive on time, every time, no matter the occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CUSTOMER TRUST === -->
+  <section class="section" aria-label="Customer trust">
+    <div class="container">
+      <div class="text-center" data-animate="fade-up">
+        <span class="section-eyebrow"><i class="bi bi-shield-fill-check"></i> Trusted By Thousands</span>
+        <h2 class="section-title">Why Customers Trust Bloomora</h2>
+        <p class="section-subtitle">Our reputation is built on consistent quality, reliability, and heartfelt service.</p>
+      </div>
+      <div class="section-divider"><div class="line"></div><i class="bi bi-flower1 flower-icon"></i><div class="line"></div></div>
+
+      <div class="trust-grid">
+        <div class="trust-badge" data-animate="fade-up" data-delay="100"><i class="bi bi-award-fill"></i><div><strong>Award Winning</strong><span>Best Florist 2022, 2023 - London Floral Awards</span></div></div>
+        <div class="trust-badge" data-animate="fade-up" data-delay="200"><i class="bi bi-star-fill" style="color:#f59e0b;"></i><div><strong>4.9/5 Rating</strong><span>Based on 2,800+ verified reviews</span></div></div>
+        <div class="trust-badge" data-animate="fade-up" data-delay="300"><i class="bi bi-people-fill"></i><div><strong>15,000+ Customers</strong><span>Trusted by families and businesses alike</span></div></div>
+        <div class="trust-badge" data-animate="fade-up" data-delay="400"><i class="bi bi-truck"></i><div><strong>Same-Day Delivery</strong><span>Available 7 days a week across 50+ areas</span></div></div>
+        <div class="trust-badge" data-animate="fade-up" data-delay="500"><i class="bi bi-patch-check-fill"></i><div><strong>Certified Florists</strong><span>All team members hold formal floristry qualifications</span></div></div>
+        <div class="trust-badge" data-animate="fade-up" data-delay="600"><i class="bi bi-recycle eco-icon"></i><div><strong>Eco-Friendly</strong><span>Biodegradable packaging and sustainable sourcing</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === CTA === -->
+  <section class="cta-section bg-cta-3" aria-label="Contact CTA">
+    <div class="container">
+      <div class="cta-content" data-animate="zoom-in">
+        <span class="section-eyebrow" style="color:var(--secondary);"><i class="bi bi-flower2"></i> Let's Create Something Beautiful</span>
+        <h2 class="section-title">Ready to Work With<br><em>Our Expert Florists?</em></h2>
+        <p class="section-subtitle">From a single stem to a full wedding floral design, our team is here to bring your vision to life.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-white btn-lg"><i class="bi bi-envelope-heart"></i> Contact Our Team</a>
+          <a href="gallery.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:white;"><i class="bi bi-images"></i> View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" style="margin-bottom:1rem; display:flex;"><div class="brand-icon"><img src="assets/images/logo.svg" alt="Bloomora logo" class="brand-logo"></div><div class="brand-text"><span class="brand-name">Bloomora</span><span class="brand-tagline">Fresh Flower Delivery</span></div></a>
+          <p class="footer-desc">Fresh handcrafted flower arrangements delivered to your door. Same-day delivery available across the city.</p>
+          <div class="social-links"><a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a><a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a><a href="#" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></div>
+        </div>
+        <div><h3 class="footer-col-title">Quick Links</h3><ul class="footer-links"><li><a href="index.html"><i class="bi bi-link-45deg"></i>Home</a></li><li><a href="about.html"><i class="bi bi-link-45deg"></i>About Us</a></li><li><a href="occasions.html"><i class="bi bi-link-45deg"></i>Occasions</a></li><li><a href="seasonal-blooms.html"><i class="bi bi-link-45deg"></i>Seasonal Blooms</a></li><li><a href="delivery-areas.html"><i class="bi bi-link-45deg"></i>Delivery Areas</a></li><li><a href="gallery.html"><i class="bi bi-link-45deg"></i>Gallery</a></li><li><a href="contact.html"><i class="bi bi-link-45deg"></i>Contact Us</a></li></ul></div>
+        <div><h3 class="footer-col-title">Contact Info</h3><div class="footer-contact"><div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>42 Blossom Lane, Floral Quarter,<br>London, EC1A 1BB</span></div><div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+44 (0) 123 456 7890</span></div><div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@bloomora.co.uk</span></div><div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon-Sat: 7AM-8PM<br>Sun: 9AM-5PM</span></div></div></div>
+        <div class="footer-newsletter"><h3 class="footer-col-title">Newsletter</h3><p class="footer-newsletter-text">Subscribe for seasonal inspiration and exclusive offers.</p><form data-form="newsletter" style="margin-bottom:1rem;"><div class="input-group"><input type="email" placeholder="Your email address" aria-label="Email" required /><button type="submit" class="btn btn-primary" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;">Subscribe</button></div></form><p style="font-size:0.75rem;color:rgba(255,255,255,0.35);"><i class="bi bi-lock-fill"></i> Unsubscribe anytime.</p></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 Bloomora Fresh Flower Delivery. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
