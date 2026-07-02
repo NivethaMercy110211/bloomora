@@ -1879,11 +1879,16 @@ select.form-control {
 .auth-form-side {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3rem 4rem;
   background: var(--bg);
   overflow-y: auto;
   max-height: 100vh;
+}
+
+.auth-form-container {
+  margin: auto 0;
+  width: 100%;
 }
 
 .auth-logo {
@@ -1924,7 +1929,7 @@ select.form-control {
   margin: 0 auto 1.5rem !important;
   color: inherit !important;
   width: auto !important;
-  gap: 0.55rem !important;
+  gap: 0 !important;
 }
 
 .auth-visual-brand .brand-tagline {
@@ -1936,12 +1941,13 @@ select.form-control {
   align-items: center !important;
   justify-content: center !important;
   width: auto !important;
-  gap: 0.55rem !important;
+  gap: 0 !important;
 }
 
 .auth-visual-brand .brand-icon,
 .auth-logo .navbar-brand .brand-icon {
   margin: 0 !important;
+  margin-inline-end: 0.55rem !important;
   padding: 0 !important;
 }
 
@@ -1949,6 +1955,8 @@ select.form-control {
 .auth-logo .navbar-brand .brand-text {
   margin: 0 !important;
   padding: 0 !important;
+  text-align: start !important;
+  align-items: flex-start !important;
 }
 
 .auth-heading {
