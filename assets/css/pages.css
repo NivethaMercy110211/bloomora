@@ -200,8 +200,10 @@
 .occasion-nav-scroll {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.75rem;
-  overflow-x: auto;
+  overflow-x: visible;
   padding: 0.9rem 0;
   scrollbar-width: none;
 }
