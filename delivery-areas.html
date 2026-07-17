@@ -14,6 +14,50 @@
   <link rel="apple-touch-icon" href="assets/images/favicon.png" />
   <link rel="stylesheet" href="assets/css/style.css?v=3.6" />
   <link rel="stylesheet" href="assets/css/pages.css?v=3.6" />
+  <!-- Leaflet CSS for Geospatial Visualization -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    /* Leaflet Popups & Controls Theme Integration */
+    .leaflet-popup-content-wrapper {
+      border-radius: var(--radius-sm) !important;
+      background: var(--bg-card) !important;
+      color: var(--text) !important;
+      font-family: var(--font-body) !important;
+      box-shadow: var(--shadow-card) !important;
+      border: 1px solid var(--border) !important;
+      padding: 0.1rem !important;
+    }
+    .leaflet-popup-tip {
+      background: var(--bg-card) !important;
+      border: 1px solid var(--border) !important;
+    }
+    .leaflet-popup-content {
+      font-size: 0.82rem !important;
+      line-height: 1.45 !important;
+      margin: 0.6rem 0.8rem !important;
+    }
+    .leaflet-container a.leaflet-popup-close-button {
+      color: var(--text-light) !important;
+      font-size: 1rem !important;
+      padding: 4px 6px 0 0 !important;
+    }
+    .leaflet-bar {
+      border: 1px solid var(--border) !important;
+      box-shadow: var(--shadow-card) !important;
+      border-radius: var(--radius-sm) !important;
+      overflow: hidden;
+    }
+    .leaflet-bar a {
+      background-color: var(--bg-card) !important;
+      color: var(--text) !important;
+      border-bottom: 1px solid var(--border) !important;
+      transition: all 0.3s;
+    }
+    .leaflet-bar a:hover {
+      background-color: var(--bg-alt) !important;
+      color: var(--primary) !important;
+    }
+  </style>
 </head>
 <body>
 
@@ -33,7 +77,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul class="mobile-nav-links"><li><a href="index.html" class="mobile-nav-link">Home 1</a></li><li><a href="home2.html" class="mobile-nav-link">Home 2</a></li><li><a href="about.html" class="mobile-nav-link">About</a></li><li><a href="occasions.html" class="mobile-nav-link">Occasions</a></li><li><a href="seasonal-blooms.html" class="mobile-nav-link">Seasonal Blooms</a></li><li><a href="delivery-areas.html" class="mobile-nav-link active">Delivery Areas</a></li><li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li><li><a href="contact.html" class="mobile-nav-link">Contact</a></li></ul>
     <div class="mobile-controls"><button class="nav-icon-btn toggle-theme-btn"><i class="bi bi-moon-stars-fill theme-icon-moon"></i><i class="bi bi-sun-fill theme-icon-sun" style="display:none;"></i></button><button class="nav-icon-btn toggle-dir-btn"><span class="dir-label" style="font-size:0.7rem;font-weight:700;">RTL</span></button></div>
-    <div class="mobile-login-btn"><a href="login.html" class="btn-login-nav" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i class="bi bi-person-fill"></i> Login to Your Account</a></div>
+    <div class="mobile-login-btn"><a href="login.html" class="btn-login-nav" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;border-radius:50px;"><i class="bi bi-person-fill"></i> Login </a></div>
   </div>
 
   <!-- PAGE BANNER -->
@@ -61,13 +105,7 @@
 
       <div class="split-section" style="gap:3rem;">
         <div data-animate="fade-right">
-          <div class="map-placeholder" style="min-height:400px;">
-            <div style="text-align:center;">
-              <i class="bi bi-map" style="font-size:4rem;color:var(--primary);opacity:0.4;display:block;margin-bottom:1rem;"></i>
-              <p style="color:var(--text-muted);font-size:0.9rem;">Interactive delivery map</p>
-              <p style="color:var(--text-muted);font-size:0.8rem;">Covering London &amp; South East England</p>
-            </div>
-          </div>
+          <div id="delivery-map" style="height:400px; border-radius:18px; border:1px solid var(--border); box-shadow: var(--shadow-card); z-index: 1; overflow: hidden;"></div>
         </div>
         <div data-animate="fade-left">
           <h3 style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:1rem;">Coverage by Zone</h3>
@@ -298,6 +336,102 @@
       <div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 Bloomora Fresh Flower Delivery. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
     </div>
   </footer>
+  <!-- Leaflet Map Script and Geospatial Layer Initialization -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mapContainer = document.getElementById('delivery-map');
+      if (!mapContainer) return;
+
+      // Initialize the map centered on London
+      const map = L.map('delivery-map', {
+        center: [51.5074, -0.1278],
+        zoom: 9,
+        scrollWheelZoom: false // disable zoom scroll to avoid scrolling interference
+      });
+
+      // Tile layers (Light and Dark Mode themes)
+      const lightTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
+      });
+
+      const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
+      });
+
+      // Determine current theme
+      function getTheme() {
+        return document.documentElement.getAttribute('data-theme') || 'light';
+      }
+
+      // Add appropriate theme layer
+      let activeTiles = getTheme() === 'dark' ? darkTiles : lightTiles;
+      activeTiles.addTo(map);
+
+      // Listen for theme switch to toggle tile themes dynamically
+      const themeObserver = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.attributeName === 'data-theme') {
+            const newTheme = getTheme();
+            if (newTheme === 'dark') {
+              lightTiles.remove();
+              darkTiles.addTo(map);
+            } else {
+              darkTiles.remove();
+              lightTiles.addTo(map);
+            }
+          }
+        });
+      });
+      themeObserver.observe(document.documentElement, { attributes: true });
+
+      // Define Zone 3 (South East England) - Outer
+      const zone3 = L.circle([51.5074, -0.1278], {
+        color: '#ff9ebb',
+        fillColor: '#ff9ebb',
+        fillOpacity: 0.08,
+        weight: 1.5,
+        dashArray: '6, 6',
+        radius: 40000 // 40 km radius
+      }).addTo(map);
+      zone3.bindPopup('<strong>Zone 3 - South East England</strong><br>Next-day delivery available.<br>Flexible booking slots.');
+
+      // Define Zone 2 (Greater London) - Middle
+      const zone2 = L.circle([51.5074, -0.1278], {
+        color: '#FF7AA5',
+        fillColor: '#FF7AA5',
+        fillOpacity: 0.15,
+        weight: 2,
+        radius: 20000 // 20 km radius
+      }).addTo(map);
+      zone2.bindPopup('<strong>Zone 2 - Greater London</strong><br>Same-day delivery available.<br>Order before 12 PM.');
+
+      // Define Zone 1 (Central London) - Inner
+      const zone1 = L.circle([51.5074, -0.1278], {
+        color: '#F85D8E',
+        fillColor: '#F85D8E',
+        fillOpacity: 0.3,
+        weight: 2.5,
+        radius: 7000 // 7 km radius
+      }).addTo(map);
+      zone1.bindPopup('<strong>Zone 1 - Central London</strong><br>Same-day delivery guaranteed.<br>Order before 2 PM.');
+
+      // Add a custom store locator marker
+      const storeIcon = L.divIcon({
+        className: 'custom-store-marker',
+        html: '<div style="background:var(--primary);width:16px;height:16px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 10px rgba(0,0,0,0.3);"></div>',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
+      });
+      
+      const marker = L.marker([51.5074, -0.1278], { icon: storeIcon }).addTo(map);
+      marker.bindPopup('<strong>Bloomora Flagship Store</strong><br>42 Blossom Lane, London EC1A 1BB');
+    });
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
